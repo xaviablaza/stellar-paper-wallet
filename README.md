@@ -4,8 +4,17 @@ CLI tool for making fancy printable stellar paper wallets to hold your lumens (X
 ## Getting started
 
 ### Dependencies
+- Make sure you have Python 3.6
 - You would need to install [Pillow](http://pillow.readthedocs.io/en/3.0.x/installation.html), not PIL.
 - Install qrcode 5.3 [here](https://pypi.python.org/pypi/qrcode).
+- Install [py-stellar-base](https://github.com/StellarCN/py-stellar-base)
+
+TLDR;
+```
+sudo pip install Pillow
+sudo pip install qrcode
+sudo pip install stellar-base
+```
 
 ### Commands
 `python spw.py d1` creates a png of random keypair with design 1
