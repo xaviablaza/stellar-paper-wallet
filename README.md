@@ -14,3 +14,7 @@ You would need to install [Pillow](http://pillow.readthedocs.io/en/3.0.x/install
 `python spw.py --design --privatekey` creates a png of public/private keypair with design
 
 Example usage: `python spw.py d1 SARYNYO57VPJMFJ77YLPJZIFAUFBDTLHDPDV3RVGQXRSNFRWTMPUHMZV`
+
+## Credit
+
+Credit goes to /r/C_Storm from [here](https://www.reddit.com/r/Stellar/comments/7iw50n/i_designed_some_stellar_gift_cards_you_can_use/) for the wallet design.
