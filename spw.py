@@ -29,7 +29,7 @@ except:
 if len(sys.argv) == 2:
     # Make public/private keypair
     kp = Keypair.random()
-elif len(sys.argv) == 3:
+elif sys.argv[2] == "-k":
     # Get keypair from seed
     user_seed = input("Paste your seed code here:")
     try:
@@ -37,6 +37,9 @@ elif len(sys.argv) == 3:
     except DecodeError:
         print("Unable to generate public key from private key. Is your private key correct?")
         sys.exit(3)
+else:
+    print("Arguments could not be parsed correctly.")
+    sys.exit(4)
 
 pub = kp.address().decode()
 priv = kp.seed().decode()    
