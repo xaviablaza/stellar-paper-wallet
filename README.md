@@ -25,9 +25,9 @@ sudo pip install stellar-base
 
 `python spw.py d3` creates a png of random keypair with design 3
 
-`python spw.py --design --privatekey` creates a png of public/private keypair with design
+`python spw.py --design -k` creates a png of public/private keypair with design
 
-Example usage: `python spw.py d1 SARYNYO57VPJMFJ77YLPJZIFAUFBDTLHDPDV3RVGQXRSNFRWTMPUHMZV`
+Example usage: `python spw.py d1 -k`
 
 ## Credit
 
