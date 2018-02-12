@@ -1,3 +1,4 @@
+import os
 import sys
 import qrcode
 
@@ -8,6 +9,10 @@ from stellar_base.keypair import Keypair
 from stellar_base.utils import DecodeError
 
 try:
+    # Attempt to make an output folder if one doesn't already exist
+    if not os.path.isdir('./output/'):
+        os.makedirs('./output/')
+
     # Determine what kind of design user wants
     d = sys.argv[1]
 
@@ -20,6 +25,9 @@ try:
     else:
         print("Invalid design parameter")
         sys.exit(2)
+except OSError:
+    print("Could not make ./output directory, does this user have the permission to create folders?")
+    sys.exit(5)
 except:
     print("This program requires at least 1 argument, the design pattern. Specify 'd1', 'd2', or 'd3'")
     sys.exit(1)
