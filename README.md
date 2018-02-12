@@ -27,7 +27,7 @@ sudo pip install stellar-base
 
 `python spw.py --design -k` creates a png of public/private keypair with design
 
-Example usage: `python spw.py d1 -k`
+Example usage: `python spw.py d1 -k`. The program will then ask you to paste in your secret key as an input, so that the secret key is not exposed in the command line history.
 
 ## Credit
 
